@@ -130,7 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 30294369}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Demo Room (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,8 +162,6 @@ Transform:
   - {fileID: 1187009042}
   - {fileID: 1584671726}
   - {fileID: 1414191909}
-  - {fileID: 2065163934}
-  - {fileID: 1032788543}
   - {fileID: 1516283051}
   - {fileID: 1966903648}
   - {fileID: 1554309406}
@@ -198,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 46769463}
   - component: {fileID: 46769464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +215,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &46769464
 SpriteRenderer:
@@ -280,7 +278,7 @@ GameObject:
   - component: {fileID: 71703829}
   - component: {fileID: 71703831}
   - component: {fileID: 71703830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,7 +385,7 @@ GameObject:
   m_Component:
   - component: {fileID: 75590585}
   - component: {fileID: 75590586}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -406,7 +404,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &75590586
 SpriteRenderer:
@@ -468,7 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 88785055}
   - component: {fileID: 88785056}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -549,7 +547,7 @@ GameObject:
   m_Component:
   - component: {fileID: 98225391}
   - component: {fileID: 98225392}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -568,7 +566,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 36
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &98225392
 SpriteRenderer:
@@ -629,7 +627,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157109082}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Corridor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -663,7 +661,7 @@ GameObject:
   m_Component:
   - component: {fileID: 175483704}
   - component: {fileID: 175483705}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -682,7 +680,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &175483705
 SpriteRenderer:
@@ -744,7 +742,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178267285}
   - component: {fileID: 178267286}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -763,7 +761,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &178267286
 SpriteRenderer:
@@ -826,7 +824,7 @@ GameObject:
   - component: {fileID: 193870130}
   - component: {fileID: 193870132}
   - component: {fileID: 193870131}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -923,87 +921,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &194598422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 194598423}
-  - component: {fileID: 194598424}
-  m_Layer: 0
-  m_Name: Lockers (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &194598423
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194598422}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.618, y: -0.20248732, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 976309346}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &194598424
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194598422}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &209906531
 GameObject:
   m_ObjectHideFlags: 0
@@ -1014,7 +931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209906532}
   - component: {fileID: 209906533}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &209906533
 SpriteRenderer:
@@ -1140,7 +1057,7 @@ GameObject:
   - component: {fileID: 247514425}
   - component: {fileID: 247514427}
   - component: {fileID: 247514426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1247,7 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 250339015}
   - component: {fileID: 250339016}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1328,7 +1245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 252808919}
   - component: {fileID: 252808920}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1347,7 +1264,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 35
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &252808920
 SpriteRenderer:
@@ -1409,7 +1326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 265398204}
   - component: {fileID: 265398205}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1428,7 +1345,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &265398205
 SpriteRenderer:
@@ -1480,87 +1397,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &267433633
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 267433634}
-  - component: {fileID: 267433635}
-  m_Layer: 0
-  m_Name: Lockers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &267433634
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267433633}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5575123, y: -0.203, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 976309346}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &267433635
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267433633}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &293242432
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 293242433}
   - component: {fileID: 293242434}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1590,7 +1426,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &293242434
 SpriteRenderer:
@@ -1652,7 +1488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 309531397}
   - component: {fileID: 309531398}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1671,7 +1507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 35
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &309531398
 SpriteRenderer:
@@ -1733,7 +1569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 322775999}
   - component: {fileID: 322776000}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1814,7 +1650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332306188}
   - component: {fileID: 332306189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1833,7 +1669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &332306189
 SpriteRenderer:
@@ -1895,7 +1731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340267070}
   - component: {fileID: 340267071}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1977,7 +1813,7 @@ GameObject:
   - component: {fileID: 352375188}
   - component: {fileID: 352375190}
   - component: {fileID: 352375189}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2085,7 +1921,7 @@ GameObject:
   - component: {fileID: 356318171}
   - component: {fileID: 356318173}
   - component: {fileID: 356318172}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2192,7 +2028,7 @@ GameObject:
   m_Component:
   - component: {fileID: 403192839}
   - component: {fileID: 403192840}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2272,7 +2108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416201396}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Demo Room (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2304,8 +2140,6 @@ Transform:
   - {fileID: 1627733670}
   - {fileID: 403192839}
   - {fileID: 496223565}
-  - {fileID: 870609308}
-  - {fileID: 883012630}
   - {fileID: 2024622505}
   - {fileID: 1390211417}
   - {fileID: 1212319412}
@@ -2340,7 +2174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 452503880}
   - component: {fileID: 452503881}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2359,7 +2193,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 29
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &452503881
 SpriteRenderer:
@@ -2421,7 +2255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 456524350}
   - component: {fileID: 456524351}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2440,7 +2274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &456524351
 SpriteRenderer:
@@ -2503,7 +2337,7 @@ GameObject:
   - component: {fileID: 465764429}
   - component: {fileID: 465764431}
   - component: {fileID: 465764430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2600,6 +2434,190 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &467635086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 467635090}
+  - component: {fileID: 467635089}
+  - component: {fileID: 467635088}
+  - component: {fileID: 467635087}
+  - component: {fileID: 467635092}
+  - component: {fileID: 467635091}
+  - component: {fileID: 467635093}
+  m_Layer: 0
+  m_Name: Sock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!50 &467635087
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &467635088
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.060032368, y: 0.03430426}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6398058, y: 0.817044}
+  m_EdgeRadius: 0
+--- !u!212 &467635089
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fbee0c0bb43ccd944894abff32412f92, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &467635090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16.18, y: 3.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2037975767}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &467635091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0324b108e2c3c514bb2a4292af2b5daa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 3
+  _attackDamage: 2
+  _lifePoints: 1
+  _attackRadius: 0.8
+  _followRadius: 5
+  playerTransform: {fileID: 1395472841}
+  enemyAnim: {fileID: 0}
+--- !u!114 &467635092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0becff1138023e7418cd7283f166c820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &467635093
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467635086}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d9e3898a27be1142990d1f373bb2a33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &469962489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,7 +2628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469962490}
   - component: {fileID: 469962491}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2629,7 +2647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &469962491
 SpriteRenderer:
@@ -2691,7 +2709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482168654}
   - component: {fileID: 482168655}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2772,7 +2790,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496223565}
   - component: {fileID: 496223566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2910,7 +2928,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.5005856
+  orthographic size: 5.213049
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2935,7 +2953,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.14, y: 1.37, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6557, y: 1.6557, z: 1.6557}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -2950,7 +2968,7 @@ GameObject:
   m_Component:
   - component: {fileID: 522066240}
   - component: {fileID: 522066241}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2969,7 +2987,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 34
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &522066241
 SpriteRenderer:
@@ -3031,7 +3049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544132840}
   - component: {fileID: 544132841}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3050,7 +3068,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &544132841
 SpriteRenderer:
@@ -3112,7 +3130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550947252}
   - component: {fileID: 550947253}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3194,7 +3212,7 @@ GameObject:
   - component: {fileID: 588309216}
   - component: {fileID: 588309218}
   - component: {fileID: 588309217}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3301,7 +3319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611219741}
   - component: {fileID: 611219742}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3382,7 +3400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 672059823}
   - component: {fileID: 672059824}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3401,7 +3419,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 36
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &672059824
 SpriteRenderer:
@@ -3463,7 +3481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673160756}
   - component: {fileID: 673160757}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3482,7 +3500,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 32
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &673160757
 SpriteRenderer:
@@ -3674,7 +3692,7 @@ GameObject:
   m_Component:
   - component: {fileID: 711332900}
   - component: {fileID: 711332901}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3755,7 +3773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713205220}
   - component: {fileID: 713205221}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3774,7 +3792,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &713205221
 SpriteRenderer:
@@ -3836,7 +3854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722774291}
   - component: {fileID: 722774292}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3855,7 +3873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &722774292
 SpriteRenderer:
@@ -3917,7 +3935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 724565987}
   - component: {fileID: 724565988}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3936,7 +3954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 27
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &724565988
 SpriteRenderer:
@@ -3998,7 +4016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 726244779}
   - component: {fileID: 726244780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4017,7 +4035,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 30
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &726244780
 SpriteRenderer:
@@ -13888,7 +13906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 747482072}
   - component: {fileID: 747482073}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13907,7 +13925,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &747482073
 SpriteRenderer:
@@ -13969,7 +13987,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756773182}
   - component: {fileID: 756773183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13988,7 +14006,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &756773183
 SpriteRenderer:
@@ -14050,7 +14068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 802482396}
   - component: {fileID: 802482397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14069,7 +14087,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &802482397
 SpriteRenderer:
@@ -14131,7 +14149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 832461720}
   - component: {fileID: 832461721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14150,7 +14168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &832461721
 SpriteRenderer:
@@ -14212,7 +14230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 850835342}
   - component: {fileID: 850835343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14293,7 +14311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 854586077}
   - component: {fileID: 854586078}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14364,168 +14382,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &870609307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 870609308}
-  - component: {fileID: 870609309}
-  m_Layer: 0
-  m_Name: Lockers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &870609308
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870609307}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5575123, y: -0.203, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 416201396}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &870609309
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 870609307}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!1 &883012629
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 883012630}
-  - component: {fileID: 883012631}
-  m_Layer: 0
-  m_Name: Lockers (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &883012630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883012629}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.618, y: -0.20248732, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 416201396}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &883012631
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883012629}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &895851168
 GameObject:
   m_ObjectHideFlags: 0
@@ -14536,7 +14392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 895851169}
   - component: {fileID: 895851170}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14555,7 +14411,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &895851170
 SpriteRenderer:
@@ -14617,7 +14473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 925562443}
   - component: {fileID: 925562444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14698,7 +14554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953596952}
   - component: {fileID: 953596953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14779,7 +14635,7 @@ GameObject:
   m_Component:
   - component: {fileID: 972393749}
   - component: {fileID: 972393750}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14859,7 +14715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 976309346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Demo Room (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14891,8 +14747,6 @@ Transform:
   - {fileID: 322775999}
   - {fileID: 340267070}
   - {fileID: 611219741}
-  - {fileID: 267433634}
-  - {fileID: 194598423}
   - {fileID: 1289306410}
   - {fileID: 293242433}
   - {fileID: 2076772226}
@@ -14927,7 +14781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992769314}
   - component: {fileID: 992769315}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15008,7 +14862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1008877284}
   - component: {fileID: 1008877285}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15027,7 +14881,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 33
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1008877285
 SpriteRenderer:
@@ -15089,7 +14943,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1030039671}
   - component: {fileID: 1030039672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15108,7 +14962,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 33
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1030039672
 SpriteRenderer:
@@ -15160,87 +15014,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1032788542
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1032788543}
-  - component: {fileID: 1032788544}
-  m_Layer: 0
-  m_Name: Lockers (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1032788543
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032788542}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.618, y: -0.20248732, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 30294369}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1032788544
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032788542}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1036110638
 GameObject:
   m_ObjectHideFlags: 0
@@ -15251,7 +15024,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1036110639}
   - component: {fileID: 1036110640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15333,7 +15106,7 @@ GameObject:
   - component: {fileID: 1050936941}
   - component: {fileID: 1050936943}
   - component: {fileID: 1050936942}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15440,7 +15213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1057511388}
   - component: {fileID: 1057511389}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15459,7 +15232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 33
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1057511389
 SpriteRenderer:
@@ -15522,7 +15295,7 @@ GameObject:
   - component: {fileID: 1071379565}
   - component: {fileID: 1071379567}
   - component: {fileID: 1071379566}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15629,7 +15402,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086451968}
   - component: {fileID: 1086451969}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15648,7 +15421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 29
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1086451969
 SpriteRenderer:
@@ -15711,7 +15484,7 @@ GameObject:
   - component: {fileID: 1103381642}
   - component: {fileID: 1103381644}
   - component: {fileID: 1103381643}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15819,7 +15592,7 @@ GameObject:
   - component: {fileID: 1120101222}
   - component: {fileID: 1120101224}
   - component: {fileID: 1120101223}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15926,7 +15699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1171597943}
   - component: {fileID: 1171597944}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15945,7 +15718,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1171597944
 SpriteRenderer:
@@ -16007,7 +15780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187009042}
   - component: {fileID: 1187009043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16298,7 +16071,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1205861491}
   - component: {fileID: 1205861492}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16317,7 +16090,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1205861492
 SpriteRenderer:
@@ -16379,7 +16152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212319412}
   - component: {fileID: 1212319413}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16398,7 +16171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1212319413
 SpriteRenderer:
@@ -16460,7 +16233,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1257435855}
   - component: {fileID: 1257435856}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16479,7 +16252,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1257435856
 SpriteRenderer:
@@ -16541,7 +16314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1289306410}
   - component: {fileID: 1289306411}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16560,7 +16333,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1289306411
 SpriteRenderer:
@@ -16623,7 +16396,7 @@ GameObject:
   - component: {fileID: 1353842816}
   - component: {fileID: 1353842818}
   - component: {fileID: 1353842817}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16730,7 +16503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1358556463}
   - component: {fileID: 1358556464}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16749,7 +16522,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1358556464
 SpriteRenderer:
@@ -16811,7 +16584,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1390211417}
   - component: {fileID: 1390211418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16830,7 +16603,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1390211418
 SpriteRenderer:
@@ -16893,12 +16666,12 @@ GameObject:
   - component: {fileID: 1395472841}
   - component: {fileID: 1395472840}
   - component: {fileID: 1395472843}
-  - component: {fileID: 1395472842}
   - component: {fileID: 1395472844}
   - component: {fileID: 1395472845}
+  - component: {fileID: 1395472842}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16961,7 +16734,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395472839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.14, y: 0.88, z: 0}
+  m_LocalPosition: {x: 5.21, y: 10.48, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16980,7 +16753,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017438889, y: 0.029351443}
+  m_Offset: {x: 0.017282486, y: 0.028280199}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -16991,7 +16764,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.47102165, y: 0.6848114}
+  m_Size: {x: 0.4689598, y: 0.68577516}
   m_EdgeRadius: 0
 --- !u!50 &1395472843
 Rigidbody2D:
@@ -17027,9 +16800,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   facingRight: 1
-  speed: 3
+  speed: 4
   move_velocity: 0
-  jump: 6
+  jump: 7.5
   animator: {fileID: 1395472845}
 --- !u!95 &1395472845
 Animator:
@@ -17060,7 +16833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1414191909}
   - component: {fileID: 1414191910}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17141,7 +16914,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428881707}
   - component: {fileID: 1428881708}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17160,7 +16933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 29
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1428881708
 SpriteRenderer:
@@ -17222,7 +16995,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428993000}
   - component: {fileID: 1428993001}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17241,7 +17014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 35
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1428993001
 SpriteRenderer:
@@ -17303,7 +17076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501445510}
   - component: {fileID: 1501445511}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17322,7 +17095,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1501445511
 SpriteRenderer:
@@ -17384,7 +17157,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514436473}
   - component: {fileID: 1514436474}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17403,7 +17176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1514436474
 SpriteRenderer:
@@ -17465,7 +17238,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516283051}
   - component: {fileID: 1516283052}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17484,7 +17257,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1516283052
 SpriteRenderer:
@@ -17546,7 +17319,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554309406}
   - component: {fileID: 1554309407}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17565,7 +17338,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1554309407
 SpriteRenderer:
@@ -17661,7 +17434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1584671726}
   - component: {fileID: 1584671727}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17742,7 +17515,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608012325}
   - component: {fileID: 1608012326}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17761,7 +17534,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1608012326
 SpriteRenderer:
@@ -17823,7 +17596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608203763}
   - component: {fileID: 1608203764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17842,7 +17615,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1608203764
 SpriteRenderer:
@@ -17904,7 +17677,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1627733670}
   - component: {fileID: 1627733671}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17985,7 +17758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1631646790}
   - component: {fileID: 1631646791}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18004,7 +17777,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1631646791
 SpriteRenderer:
@@ -18066,7 +17839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1642178203}
   - component: {fileID: 1642178204}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18085,7 +17858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 34
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1642178204
 SpriteRenderer:
@@ -18147,7 +17920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1682356847}
   - component: {fileID: 1682356848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18229,7 +18002,7 @@ GameObject:
   - component: {fileID: 1703957223}
   - component: {fileID: 1703957225}
   - component: {fileID: 1703957224}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18336,7 +18109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723967182}
   - component: {fileID: 1723967183}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18417,7 +18190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753045200}
   - component: {fileID: 1753045201}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18436,7 +18209,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 27
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1753045201
 SpriteRenderer:
@@ -18499,7 +18272,7 @@ GameObject:
   - component: {fileID: 1775316396}
   - component: {fileID: 1775316398}
   - component: {fileID: 1775316397}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18606,7 +18379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1800339863}
   - component: {fileID: 1800339864}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ScienceRoomWindow (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18625,7 +18398,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 36
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1800339864
 SpriteRenderer:
@@ -18687,7 +18460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1809404504}
   - component: {fileID: 1809404505}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18706,7 +18479,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 27
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1809404505
 SpriteRenderer:
@@ -18768,7 +18541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1810185694}
   - component: {fileID: 1810185695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18787,7 +18560,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1810185695
 SpriteRenderer:
@@ -18849,7 +18622,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1826199834}
   - component: {fileID: 1826199835}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18868,7 +18641,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1826199835
 SpriteRenderer:
@@ -18931,7 +18704,7 @@ GameObject:
   - component: {fileID: 1848262677}
   - component: {fileID: 1848262679}
   - component: {fileID: 1848262678}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19038,7 +18811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1849662031}
   - component: {fileID: 1849662032}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallBottom (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19119,7 +18892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1871506110}
   - component: {fileID: 1871506111}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19138,7 +18911,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 26
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1871506111
 SpriteRenderer:
@@ -19201,7 +18974,7 @@ GameObject:
   - component: {fileID: 1872453771}
   - component: {fileID: 1872453773}
   - component: {fileID: 1872453772}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19309,7 +19082,7 @@ GameObject:
   - component: {fileID: 1947085438}
   - component: {fileID: 1947085440}
   - component: {fileID: 1947085439}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19416,7 +19189,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1966903648}
   - component: {fileID: 1966903649}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19435,7 +19208,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1966903649
 SpriteRenderer:
@@ -19497,7 +19270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2018978036}
   - component: {fileID: 2018978037}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19516,7 +19289,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2018978037
 SpriteRenderer:
@@ -19579,7 +19352,7 @@ GameObject:
   - component: {fileID: 2020857193}
   - component: {fileID: 2020857195}
   - component: {fileID: 2020857194}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floor (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19686,7 +19459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024622505}
   - component: {fileID: 2024622506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19705,7 +19478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2024622506
 SpriteRenderer:
@@ -19767,7 +19540,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037725345}
   - component: {fileID: 2037725346}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19786,7 +19559,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2037725346
 SpriteRenderer:
@@ -19838,6 +19611,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2037975766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037975767}
+  m_Layer: 0
+  m_Name: Ground Detection
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2037975767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037975766}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.498, y: -0.357, z: -17.569242}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 467635090}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2038763056
 GameObject:
   m_ObjectHideFlags: 0
@@ -19848,7 +19651,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2038763057}
   - component: {fileID: 2038763058}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19867,7 +19670,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2038763058
 SpriteRenderer:
@@ -19919,87 +19722,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2065163933
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2065163934}
-  - component: {fileID: 2065163935}
-  m_Layer: 0
-  m_Name: Lockers
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2065163934
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065163933}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.5575123, y: -0.203, z: 1.9643694}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 30294369}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2065163935
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2065163933}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 324c284392cb7f04bbd281e8d7590e8b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &2073231744
 GameObject:
   m_ObjectHideFlags: 0
@@ -20010,7 +19732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2073231745}
   - component: {fileID: 2073231746}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20029,7 +19751,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 30294369}
-  m_RootOrder: 34
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2073231746
 SpriteRenderer:
@@ -20091,7 +19813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2076772226}
   - component: {fileID: 2076772227}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20110,7 +19832,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 976309346}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2076772227
 SpriteRenderer:
@@ -20172,7 +19894,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124360556}
   - component: {fileID: 2124360557}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallCenter (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20191,7 +19913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2124360557
 SpriteRenderer:
@@ -20253,7 +19975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2126080268}
   - component: {fileID: 2126080269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HallwayWallTop (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20272,7 +19994,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 416201396}
-  m_RootOrder: 28
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2126080269
 SpriteRenderer:
