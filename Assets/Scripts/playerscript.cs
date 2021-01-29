@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class playerscript : MonoBehaviour
 {
+    public bool facingRight = true;
     public float speed;
     public float move_velocity;
     public float jump;
+    public Animator animator;
     private Rigidbody2D playerbody;
  
     // Start is called before the first frame update
@@ -18,7 +20,14 @@ public class playerscript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+        animator.SetFloat("Speed", Mathf.Abs(move_velocity));
+        animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
+        float h = Input.GetAxis("Horizontal");
+        if (h > 0 && !facingRight)
+            Flip();
+        else if (h < 0 && facingRight)
+            Flip();
+        if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             if(is_grounded)
             {
@@ -63,5 +72,12 @@ public class playerscript : MonoBehaviour
             }
         }
         return is_with_ground;
+    }
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }
