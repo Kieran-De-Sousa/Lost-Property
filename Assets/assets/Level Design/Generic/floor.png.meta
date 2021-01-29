@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/assets/Enemies/FakeBox/FakeBoxAttack1.png.meta
+guid: 73c78a3f4d499e74da52b45c75b8d917
+=======
 guid: 90e846828ffd19b44bfc6848687de83b
+>>>>>>> 5c2676b7a6023138a53a210976ca1395e832addb:Assets/assets/Level Design/Generic/floor.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
