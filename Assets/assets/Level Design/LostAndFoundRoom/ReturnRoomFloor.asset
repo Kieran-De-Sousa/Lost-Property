@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: ReturnRoomFloor
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: e2017343a941fcd4dbecde2674f2883a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 42d741832d3d09e42b70a3cdacc5c6d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
