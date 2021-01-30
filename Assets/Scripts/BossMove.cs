@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMove : Enemies
+public class BossMove : Enemies
 {
 
     //variables
@@ -55,7 +55,7 @@ public class EnemyMove : Enemies
                     enemyAnim.SetBool("isAttacking", false);
                     //walk
                     enemyAnim.SetBool("isRunning", true);
-                    enemySR.flipX = true;
+                    enemySR.flipX = false;
                 }
 
             }
@@ -75,7 +75,7 @@ public class EnemyMove : Enemies
                     enemyAnim.SetBool("isAttacking", false);
                     //walk
                     enemyAnim.SetBool("isRunning", true);
-                    enemySR.flipX = false;
+                    enemySR.flipX = true;
                 }
 
 

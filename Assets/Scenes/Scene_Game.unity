@@ -1972,6 +1972,7 @@ MonoBehaviour:
   _attackDamage: 0
   _lifePoints: 0
   _attackRadius: 1.5
+  facingRight: 0
   _followRadius: 10
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
@@ -3536,6 +3537,7 @@ MonoBehaviour:
   _attackDamage: 0
   _lifePoints: 0
   _attackRadius: 2
+  facingRight: 0
   _followRadius: 4
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
@@ -4181,6 +4183,7 @@ MonoBehaviour:
   _attackDamage: 0
   _lifePoints: 0
   _attackRadius: 2
+  facingRight: 0
   _followRadius: 6
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
@@ -112895,6 +112898,7 @@ MonoBehaviour:
   _attackDamage: 0
   _lifePoints: 0
   _attackRadius: 1
+  facingRight: 0
   _followRadius: 1.5
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
@@ -113937,8 +113941,8 @@ GameObject:
   - component: {fileID: 1775850914}
   - component: {fileID: 1775850913}
   - component: {fileID: 1775850916}
-  - component: {fileID: 1775850918}
   - component: {fileID: 1775850917}
+  - component: {fileID: 1775850918}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -114097,14 +114101,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775850911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4507017f604cdf04bbee17824dde15dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2
-  _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 6
-  _followRadius: 12
+  _attackDamage: 5
+  _lifePoints: 20
+  _attackRadius: 2
+  facingRight: 0
+  _followRadius: 30
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
 --- !u!1 &1800339862
@@ -114989,6 +114994,7 @@ MonoBehaviour:
   _attackDamage: 0
   _lifePoints: 0
   _attackRadius: 1.1
+  facingRight: 0
   _followRadius: 10
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
