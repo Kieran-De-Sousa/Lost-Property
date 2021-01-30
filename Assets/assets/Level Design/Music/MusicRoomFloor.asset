@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: MusicRoomFloor
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: 51a92acac7d68ee44a3b1985ff0f6d1c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d2ee762d8a83dc47bbc5da5dc9fe45a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
