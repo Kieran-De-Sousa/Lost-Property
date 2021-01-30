@@ -45,15 +45,16 @@ public class EnemyMove : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
+                    enemyAnim.SetBool("isRunning", false);
+                    enemyAnim.SetBool("isAttacking", true);
                 }
                 else
                 {
                     this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                    enemyAnim.SetBool("isAttacking", false);
                     //walk
-                    enemyAnim.SetBool("Sock_run", true);
+                    enemyAnim.SetBool("isRunning", true);
                     enemySR.flipX = true;
                 }
 
@@ -64,15 +65,16 @@ public class EnemyMove : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
+                    enemyAnim.SetBool("isRunning", false);
+                    enemyAnim.SetBool("isAttacking", true);
                 }
                 else
                 {
                     this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                    enemyAnim.SetBool("isAttacking", false);
                     //walk
-                    enemyAnim.SetBool("Sock_run", true);
+                    enemyAnim.SetBool("isRunning", true);
                     enemySR.flipX = false;
                 }
 
@@ -81,7 +83,8 @@ public class EnemyMove : Enemies
         }
         else
         {
-            enemyAnim.SetBool("Walking", false);
+            enemyAnim.SetBool("isRunning", false);
+            enemyAnim.SetBool("isAttacking", false);
         }
 
 
