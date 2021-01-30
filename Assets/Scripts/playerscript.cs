@@ -4,39 +4,35 @@ using UnityEngine;
 
 public class playerscript : MonoBehaviour
 {
-    private bool isJumping = false;
+    public LayerMask groundlayer;
+    public bool isGrounded = false;
+    public Transform groundcheck;
     public bool facingRight = true;
     public float speed;
     public float move_velocity;
     public float jump;
     public Animator animator;
     private Rigidbody2D playerbody;
+    public BoxCollider2D playercollider;
 
     // Start is called before the first frame update
     void Start()
     {
+        playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
     }
-    bool is_grounded = true;
     // Update is called once per frame
     void FixedUpdate()
     {
+        isGrounded = Physics2D.OverlapCircle(groundcheck.position, 0.2f, groundlayer);
         animator.SetFloat("Speed", Mathf.Abs(move_velocity));
         animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
         float h = Input.GetAxis("Horizontal");
-        if(playerbody.velocity.y == 0)
-        {
-            is_grounded = true;
-        }
-        if(playerbody.velocity.y != 0)
-        {
-            is_grounded = false;
-        }
         if (h > 0 && !facingRight)
             Flip();
         else if (h < 0 && facingRight)
             Flip();
-        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) &&is_grounded)
+        if ((Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) && isGrounded == true)
         {
             playerbody.velocity = new Vector2(move_velocity, jump);
         }
@@ -58,5 +54,5 @@ public class playerscript : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-    }
+}
 
