@@ -112785,7 +112785,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackrange: 1
-  damage: 2
+  damage: 20
 --- !u!1 &1414191908
 GameObject:
   m_ObjectHideFlags: 0

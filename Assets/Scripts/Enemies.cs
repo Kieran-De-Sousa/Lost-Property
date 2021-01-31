@@ -88,4 +88,15 @@ public class Enemies : MonoBehaviour
         lifePoints -= damage;
         Debug.Log("Damage Taken!");
     }
+    void FixedUpdate()
+    {
+        if(lifePoints <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void Start()
+    {
+        lifePoints = 20;
+    }
 }
