@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 323553592}
   - component: {fileID: 323553594}
   - component: {fileID: 323553593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3371,7 +3371,7 @@ GameObject:
   - component: {fileID: 550509924}
   - component: {fileID: 550509926}
   - component: {fileID: 550509925}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3819,7 +3819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623810497}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4016,7 +4016,7 @@ GameObject:
   - component: {fileID: 691629413}
   - component: {fileID: 691629415}
   - component: {fileID: 691629414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Clarinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61393,6 +61393,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &746181625
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 746181626}
+  m_Layer: 0
+  m_Name: Attack
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746181626
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746181625}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.31, y: -0.023, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1395472841}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747482071
 GameObject:
   m_ObjectHideFlags: 0
@@ -112218,7 +112248,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294918967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112573,6 +112603,7 @@ GameObject:
   - component: {fileID: 1395472842}
   - component: {fileID: 1395472844}
   - component: {fileID: 1395472845}
+  - component: {fileID: 1395472846}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -112643,6 +112674,7 @@ Transform:
   m_Children:
   - {fileID: 519420032}
   - {fileID: 623810497}
+  - {fileID: 746181626}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112735,6 +112767,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1395472846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395472839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256d6dddfa169eb4494c5ada7261affc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack_start: 0.3
+  attackPos: {fileID: 746181626}
+  enemies:
+    serializedVersion: 2
+    m_Bits: 512
+  attackrange: 1
+  damage: 2
 --- !u!1 &1414191908
 GameObject:
   m_ObjectHideFlags: 0
@@ -113236,7 +113287,7 @@ GameObject:
   - component: {fileID: 1528818629}
   - component: {fileID: 1528818631}
   - component: {fileID: 1528818630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114443,9 +114494,9 @@ GameObject:
   - component: {fileID: 1775850914}
   - component: {fileID: 1775850913}
   - component: {fileID: 1775850916}
-  - component: {fileID: 1775850918}
   - component: {fileID: 1775850917}
-  m_Layer: 0
+  - component: {fileID: 1775850918}
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114603,14 +114654,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775850911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4507017f604cdf04bbee17824dde15dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
-  _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 6
-  _followRadius: 12
+  _moveSpeed: 1
+  _attackDamage: 4
+  _lifePoints: 20
+  _attackRadius: 4
+  _followRadius: 15
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
 --- !u!1 &1800339862
@@ -115330,7 +115381,7 @@ GameObject:
   - component: {fileID: 1879520481}
   - component: {fileID: 1879520483}
   - component: {fileID: 1879520482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
