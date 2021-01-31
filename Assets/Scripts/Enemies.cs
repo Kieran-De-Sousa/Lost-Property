@@ -83,4 +83,9 @@ public class Enemies : MonoBehaviour
             return false;
         }
     }
+     public void TakeDamage(int damage)
+    {
+        lifePoints -= damage;
+        Debug.Log("Damage Taken!");
+    }
 }
