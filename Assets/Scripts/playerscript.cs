@@ -15,6 +15,7 @@ public class playerscript : MonoBehaviour
     private Rigidbody2D playerbody;
     public BoxCollider2D playercollider;
     public bool isAttacking = false;
+    public int lifePoints;
 
     // Start is called before the first frame update
     void Start()

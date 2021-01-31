@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
+    public int delay;
     public int health;
     public int maxHealth;
 
@@ -12,11 +14,15 @@ public class Health : MonoBehaviour
     public Sprite fullheart;
     public Sprite noheart;
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (health > maxHealth)
         {
             health = maxHealth;
+        }
+        if(health <= 0)
+        {
+            Death();
         }
         
         for (int i = 0; i < hearts.Length; i++)
@@ -39,5 +45,21 @@ public class Health : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("Player Damage Taken!");
+    }
+    public void Death()
+    {
+        this.GetComponent<Animator>().SetBool("isDead", true);
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+        StartCoroutine(wait());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(2f);
     }
 }

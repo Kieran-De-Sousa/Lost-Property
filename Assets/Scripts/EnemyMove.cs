@@ -6,9 +6,15 @@ public class EnemyMove : Enemies
 {
 
     //variables
+    public float timebtwattack;
+    public float attackTime;
     public int _moveSpeed;
     public int _attackDamage;
     public float _attackRadius;
+    public Transform attackPos;
+    public int attackrange;
+    public LayerMask player;
+    public int damage;
 
     //movement
     public float _followRadius;
@@ -49,6 +55,19 @@ public class EnemyMove : Enemies
                     //for attack animation
                     enemyAnim.SetBool("isRunning", false);
                     enemyAnim.SetBool("isAttacking", true);
+                    if (attackTime <= 0)
+                    {
+                        Collider2D[] damageenemies = Physics2D.OverlapCircleAll(attackPos.position, attackrange, player);
+                        for (int i = 0; i < damageenemies.Length; i++)
+                        {
+                            damageenemies[i].GetComponent<Health>().TakeDamage(damage);
+                        }
+                        attackTime = timebtwattack;
+                    }
+                    else
+                    {
+                        attackTime -= Time.deltaTime;
+                    }
                 }
                 else
                 {
