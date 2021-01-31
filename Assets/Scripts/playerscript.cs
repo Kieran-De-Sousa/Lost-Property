@@ -8,6 +8,7 @@ public class playerscript : MonoBehaviour
     public bool isGrounded = false;
     public Transform groundcheck;
     public bool facingRight = true;
+    public int health = 12;
     public float speed;
     public float move_velocity;
     public float jump;
