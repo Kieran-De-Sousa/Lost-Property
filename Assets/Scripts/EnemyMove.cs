@@ -8,7 +8,6 @@ public class EnemyMove : Enemies
     //variables
     public int _moveSpeed;
     public int _attackDamage;
-    public int _lifePoints;
     public float _attackRadius;
 
     //movement
@@ -28,7 +27,6 @@ public class EnemyMove : Enemies
         //set the variables
         setMoveSpeed(_moveSpeed);
         setAttackDamage(_attackDamage);
-        setLifePoints(_lifePoints);
         setAttackRadius(_attackRadius);
         setFollowRadius(_followRadius);
     }
@@ -36,6 +34,10 @@ public class EnemyMove : Enemies
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (lifePoints <= 0)
+        {
+            Death();
+        }
         if (checkFollowRadius(playerTransform.position.x, transform.position.x))
         {
             //if player in front of the enemies
@@ -89,4 +91,10 @@ public class EnemyMove : Enemies
 
 
     }
+    public void Death()
+    {
+        this.GetComponent<Animator>().SetBool("isDead", true);
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+    }
 }
+

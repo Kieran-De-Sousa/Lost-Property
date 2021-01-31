@@ -1893,7 +1893,7 @@ GameObject:
   - component: {fileID: 323553592}
   - component: {fileID: 323553594}
   - component: {fileID: 323553593}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2042,11 +2042,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 14
   delay: 0
   _moveSpeed: 2
   _attackDamage: 0
-  _lifePoints: 0
   _attackRadius: 1.5
   _followRadius: 10
   playerTransform: {fileID: 1395472841}
@@ -2063,7 +2062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 14
   delay: 0
 --- !u!1 &332306187
 GameObject:
@@ -3449,7 +3448,7 @@ GameObject:
   - component: {fileID: 550509924}
   - component: {fileID: 550509926}
   - component: {fileID: 550509925}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 7
   delay: 0
 --- !u!114 &550509926
 MonoBehaviour:
@@ -3612,11 +3611,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 7
   delay: 0
   _moveSpeed: 6
   _attackDamage: 0
-  _lifePoints: 0
   _attackRadius: 2
   _followRadius: 4
   playerTransform: {fileID: 1395472841}
@@ -3901,7 +3899,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623810497}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Ground Check
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4096,9 +4094,9 @@ GameObject:
   - component: {fileID: 691629411}
   - component: {fileID: 691629410}
   - component: {fileID: 691629413}
-  - component: {fileID: 691629415}
   - component: {fileID: 691629414}
-  m_Layer: 0
+  - component: {fileID: 691629415}
+  m_Layer: 9
   m_Name: Clarinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4247,7 +4245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 10
   delay: 0
 --- !u!114 &691629415
 MonoBehaviour:
@@ -4261,13 +4259,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 10
   delay: 0
-  _moveSpeed: 4
-  _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 2
-  _followRadius: 6
+  _moveSpeed: 7
+  _attackDamage: 1
+  _attackRadius: 1
+  _followRadius: 5
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
 --- !u!1 &711332899
@@ -112593,7 +112590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294918967}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112949,6 +112946,7 @@ GameObject:
   - component: {fileID: 1395472844}
   - component: {fileID: 1395472845}
   - component: {fileID: 1395472846}
+  - component: {fileID: 1395472847}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -113014,11 +113012,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395472839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 183.3, y: -51.5, z: 0}
+  m_LocalPosition: {x: 30.9, y: 5.49, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 519420032}
   - {fileID: 623810497}
+  - {fileID: 1440732814}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113131,6 +113130,26 @@ MonoBehaviour:
   - {fileID: 262603054}
   fullheart: {fileID: 21300000, guid: 78d9e7ded3416cc4a938df2454778be7, type: 3}
   noheart: {fileID: 21300000, guid: 6eab9b29335e9cc4c9210506fac13248, type: 3}
+--- !u!114 &1395472847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395472839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256d6dddfa169eb4494c5ada7261affc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacking: 0
+  attack_start: 0.3
+  attackPos: {fileID: 1440732814}
+  enemies:
+    serializedVersion: 2
+    m_Bits: 512
+  attackrange: 3
+  damage: 2
 --- !u!1 &1414191908
 GameObject:
   m_ObjectHideFlags: 0
@@ -113374,6 +113393,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1440732813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1440732814}
+  m_Layer: 0
+  m_Name: AttackPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1440732814
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440732813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.298, y: -0.068, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1395472841}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1467695286
 GameObject:
   m_ObjectHideFlags: 0
@@ -113461,8 +113510,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076279f8b67d4874c9a95b0cb47c3fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  playerHealth: 0
 --- !u!1 &1501445509
 GameObject:
   m_ObjectHideFlags: 0
@@ -113721,7 +113768,7 @@ GameObject:
   - component: {fileID: 1528818629}
   - component: {fileID: 1528818631}
   - component: {fileID: 1528818630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113870,7 +113917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 5
   delay: 0
 --- !u!114 &1528818631
 MonoBehaviour:
@@ -113884,11 +113931,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 5
   delay: 0
   _moveSpeed: 1
   _attackDamage: 0
-  _lifePoints: 0
   _attackRadius: 1
   _followRadius: 1.5
   playerTransform: {fileID: 1395472841}
@@ -114932,9 +114978,9 @@ GameObject:
   - component: {fileID: 1775850914}
   - component: {fileID: 1775850913}
   - component: {fileID: 1775850916}
-  - component: {fileID: 1775850918}
   - component: {fileID: 1775850917}
-  m_Layer: 0
+  - component: {fileID: 1775850918}
+  m_Layer: 9
   m_Name: Boss
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114993,7 +115039,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -115083,7 +115129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 30
   delay: 0
 --- !u!114 &1775850918
 MonoBehaviour:
@@ -115094,16 +115140,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775850911}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
+  m_Script: {fileID: 11500000, guid: 4507017f604cdf04bbee17824dde15dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 30
   delay: 0
-  _moveSpeed: 2
+  _moveSpeed: 3
   _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 6
-  _followRadius: 12
+  _attackRadius: 4
+  _followRadius: 10
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
 --- !u!1 &1800339862
@@ -115823,7 +115868,7 @@ GameObject:
   - component: {fileID: 1879520481}
   - component: {fileID: 1879520483}
   - component: {fileID: 1879520482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Bottle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -115972,7 +116017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 3
   delay: 0
 --- !u!114 &1879520483
 MonoBehaviour:
@@ -115986,11 +116031,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifePoints: 0
+  lifePoints: 3
   delay: 0
   _moveSpeed: 3
   _attackDamage: 0
-  _lifePoints: 0
   _attackRadius: 1.1
   _followRadius: 10
   playerTransform: {fileID: 1395472841}

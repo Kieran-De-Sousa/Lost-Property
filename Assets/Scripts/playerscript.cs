@@ -14,6 +14,7 @@ public class playerscript : MonoBehaviour
     public Animator animator;
     private Rigidbody2D playerbody;
     public BoxCollider2D playercollider;
+    public bool isAttacking = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class playerscript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        animator.SetBool("isAttacking", isAttacking);
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, 0.2f, groundlayer);
         animator.SetFloat("Speed", Mathf.Abs(move_velocity));
         animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
@@ -46,6 +48,14 @@ public class playerscript : MonoBehaviour
             move_velocity += speed;
         }
         playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
+        if (Input.GetKey(KeyCode.LeftControl))
+        {
+            isAttacking = true;
+        }
+        else if (!Input.GetKey(KeyCode.LeftControl))
+        {
+            isAttacking = false;
+        }
     }
     void Flip()
     {

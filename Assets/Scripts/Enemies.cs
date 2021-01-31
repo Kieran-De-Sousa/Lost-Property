@@ -84,21 +84,21 @@ public class Enemies : MonoBehaviour
             return false;
         }
     }
-     public void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         lifePoints -= damage;
         Debug.Log("Damage Taken!");
     }
-    public void Death()
-    {
-        this.GetComponent<Animator>().SetBool("IsDead", true);
-        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
-    }
     private void FixedUpdate()
     {
-        if(lifePoints <= 0)
+        if (lifePoints <= 0)
         {
             Death();
         }
+    }
+    public void Death()
+    {
+        this.GetComponent<Animator>().SetBool("isDead", true);
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
     }
 }

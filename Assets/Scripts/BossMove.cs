@@ -8,7 +8,6 @@ public class BossMove : Enemies
     //variables
     public int _moveSpeed;
     public int _attackDamage;
-    public int _lifePoints;
     public float _attackRadius;
 
     //movement
@@ -28,7 +27,6 @@ public class BossMove : Enemies
         //set the variables
         setMoveSpeed(_moveSpeed);
         setAttackDamage(_attackDamage);
-        setLifePoints(_lifePoints);
         setAttackRadius(_attackRadius);
         setFollowRadius(_followRadius);
     }
