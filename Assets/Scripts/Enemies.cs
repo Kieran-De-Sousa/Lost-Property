@@ -8,8 +8,9 @@ public class Enemies : MonoBehaviour
 
     int moveSpeed;
     int attackDamage;
-    int lifePoints;
+    public int lifePoints;
     float attackRadius;
+    public float delay;
 
     //movement
     float followRadius;
@@ -88,15 +89,16 @@ public class Enemies : MonoBehaviour
         lifePoints -= damage;
         Debug.Log("Damage Taken!");
     }
-    void FixedUpdate()
+    public void Death()
+    {
+        this.GetComponent<Animator>().SetBool("IsDead", true);
+        Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+    }
+    private void FixedUpdate()
     {
         if(lifePoints <= 0)
         {
-            Destroy(gameObject);
+            Death();
         }
-    }
-    private void Start()
-    {
-        lifePoints = 20;
     }
 }
