@@ -91,7 +91,7 @@ public class Enemies : MonoBehaviour
     }
     public void Death()
     {
-        this.GetComponent<Animator>().SetBool("isDead", true);
+        this.GetComponent<Animator>().SetBool("IsDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
     }
     private void FixedUpdate()
@@ -100,9 +100,5 @@ public class Enemies : MonoBehaviour
         {
             Death();
         }
-    }
-    private void Start()
-    {
-        lifePoints = 20;
     }
 }
