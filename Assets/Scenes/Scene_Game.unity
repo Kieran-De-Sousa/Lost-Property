@@ -115083,8 +115083,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d1ba44c41dac8941ad95ffd0f31a276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   lifePoints: 0
   delay: 0
+=======
+  lifePoints: 20
+  delay: 1
+>>>>>>> Stashed changes
 --- !u!114 &1775850918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115097,6 +115102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f2938bbd376468d74e4d87bbdb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   lifePoints: 0
   delay: 0
   _moveSpeed: 2
@@ -115104,6 +115110,15 @@ MonoBehaviour:
   _lifePoints: 0
   _attackRadius: 6
   _followRadius: 12
+=======
+  lifePoints: 20
+  delay: 0
+  _moveSpeed: 1
+  _attackDamage: 4
+  _lifePoints: 20
+  _attackRadius: 4
+  _followRadius: 15
+>>>>>>> Stashed changes
   playerTransform: {fileID: 1395472841}
   enemyAnim: {fileID: 0}
 --- !u!1 &1800339862
