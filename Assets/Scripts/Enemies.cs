@@ -8,7 +8,7 @@ public class Enemies : MonoBehaviour
 
     int moveSpeed;
     int attackDamage;
-    int lifePoints;
+    public int lifePoints;
     float attackRadius;
 
     //movement
@@ -82,5 +82,10 @@ public class Enemies : MonoBehaviour
         {
             return false;
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        lifePoints -= damage;
+        Debug.Log("Damage Taken!");
     }
 }
