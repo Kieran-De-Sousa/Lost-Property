@@ -1,7 +1,7 @@
 # Lost Property
 
 
-# Credits:
+# Credits (So far):
 Thomas Pasley - Lead gameplay programmer
 
 Asli Baltaci - All art assets, Boss room design
