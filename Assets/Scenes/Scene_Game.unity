@@ -106814,7 +106814,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1395472844
 MonoBehaviour:
@@ -106836,7 +106836,7 @@ MonoBehaviour:
   facingRight: 1
   speed: 4.5
   move_velocity: 0
-  jump: 8
+  jump_amount: 8
   animator: {fileID: 1395472845}
   playercollider: {fileID: 1395472842}
   isAttacking: 0
