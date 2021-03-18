@@ -10,6 +10,7 @@ public class playerscript : MonoBehaviour
     public bool facingRight = true;
     public float speed;
     public float move_velocity;
+    public float dash_velocity;
     public float jump_amount;
     public Animator animator;
     private Rigidbody2D playerbody;
@@ -17,19 +18,25 @@ public class playerscript : MonoBehaviour
     public bool isAttacking = false;
     public int lifePoints;
     private float jump_held_time;
+    public float dash_amount;
+    public float dash_recharge_time;
+    private float dash_charge;
+    private bool can_dash = false;
 
     // Start is called before the first frame update
     void Start()
     {
         playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
+        dash_charge = 0.0f;
+        dash_velocity = 0.0f;
     }
     // Update is called once per frame
     void Update()
     {
         animator.SetBool("isAttacking", isAttacking);
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, 0.2f, groundlayer);
-        animator.SetFloat("Speed", Mathf.Abs(move_velocity));
+        animator.SetFloat("Speed", Mathf.Abs(move_velocity+dash_velocity));
         animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
 
         float h = Input.GetAxis("Horizontal");
@@ -46,6 +53,8 @@ public class playerscript : MonoBehaviour
             }
         }
 
+        dash_velocity = 0.0f;
+        move_velocity = 0;
 
         if (!isGrounded)
         {
@@ -70,10 +79,21 @@ public class playerscript : MonoBehaviour
             jump_held_time = 0.0f;
         }
 
+       
 
 
+        //dash_velocity = 0;
 
-        move_velocity = 0;
+        if(!can_dash)
+        {
+            dash_charge += Time.deltaTime;
+        }
+
+        if(dash_charge >= dash_recharge_time)
+        {
+            can_dash = true;
+        }
+
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             move_velocity -= speed;
@@ -82,7 +102,21 @@ public class playerscript : MonoBehaviour
         {
             move_velocity += speed;
         }
-        playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
+
+        //if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            if (can_dash)
+            {
+                //playerbody.velocity = new Vector2(dash_amount * transform.localScale.x, playerbody.velocity.y);
+                
+                dash_velocity = dash_amount;
+                dash_charge = 0.0f;
+                can_dash = false;
+            }
+        }
+        
+
+        playerbody.velocity = new Vector2(move_velocity+dash_velocity, playerbody.velocity.y);
         if (Input.GetKey(KeyCode.LeftControl))
         {
             isAttacking = true;

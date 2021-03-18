@@ -106841,6 +106841,8 @@ MonoBehaviour:
   playercollider: {fileID: 1395472842}
   isAttacking: 0
   lifePoints: 0
+  dash_amount: 100
+  dash_recharge_time: 1
 --- !u!95 &1395472845
 Animator:
   serializedVersion: 3
