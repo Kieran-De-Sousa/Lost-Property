@@ -98,6 +98,7 @@ public class Enemies : MonoBehaviour
     }
     public void Death()
     {
+        print("isdead");
         this.GetComponent<Animator>().SetBool("isDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
     }
