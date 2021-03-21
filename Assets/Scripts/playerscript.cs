@@ -103,20 +103,19 @@ public class playerscript : MonoBehaviour
             move_velocity += speed;
         }
 
-        //if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             if (can_dash)
             {
-                //playerbody.velocity = new Vector2(dash_amount * transform.localScale.x, playerbody.velocity.y);
-                
                 dash_velocity = dash_amount;
                 dash_charge = 0.0f;
                 can_dash = false;
+                playerbody.AddForce(new Vector2(dash_amount * transform.localScale.x, 0));
             }
         }
         
 
-        playerbody.velocity = new Vector2(move_velocity+dash_velocity, playerbody.velocity.y);
+        playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
         if (Input.GetKey(KeyCode.LeftControl))
         {
             isAttacking = true;
