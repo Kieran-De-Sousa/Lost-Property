@@ -103,7 +103,7 @@ public class playerscript : MonoBehaviour
             move_velocity += speed;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(KeyCode.LeftShift) && move_velocity != 0)
         {
             if (can_dash)
             {
