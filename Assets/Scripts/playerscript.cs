@@ -16,12 +16,9 @@ public class playerscript : MonoBehaviour
     public CapsuleCollider2D playercollider;
     public int jump_count;
     //Dash
-    public float dash_velocity;
-    public float dash_amount;
-    public float dash_recharge_time;
-    private float dash_charge;
-    private bool can_dash = false;
-
+    public float dashDistance = 15f;
+    bool isDashing;
+    public int dashCount;
     //Player Animator
     public Animator animator;
     //Player Combat
@@ -38,13 +35,12 @@ public class playerscript : MonoBehaviour
     {
         playercollider = this.gameObject.GetComponent<CapsuleCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
-        dash_charge = 0.0f;
-        dash_velocity = 0.0f;
+
     }
 
     void FixedUpdate()
     {
-        animator.SetFloat("Speed", Mathf.Abs(move_velocity*dash_velocity));
+        animator.SetFloat("Speed", Mathf.Abs(move_velocity));
         animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
         float h = Input.GetAxis("Horizontal");
         if (h > 0 && !facingRight)
@@ -52,26 +48,38 @@ public class playerscript : MonoBehaviour
         else if (h < 0 && facingRight)
             Flip();
         move_velocity = 0;
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if(!isDashing)
         {
-            move_velocity -= speed;
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                move_velocity -= speed;
+            }
+            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                move_velocity += speed;
+            }
+            playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
         }
-        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-        {
-            move_velocity += speed;
-        }
-        playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
     }
     void Update()
     {
         Attack();
         Jump();
-        Dash();
+        if(dashCount > 0){
+        if(Input.GetKeyDown(KeyCode.LeftShift) && facingRight &&!isGrounded)
+        {
+            StartCoroutine(Dash(1f));
+        }
+        if(Input.GetKeyDown(KeyCode.LeftShift) && !facingRight &&!isGrounded)
+        {
+            StartCoroutine(Dash(-1f));
+        }
+        }
         if(isGrounded)
         {
+            dashCount = 1;
             jump_count = 2;
         }
-        playerbody.velocity = new Vector2(move_velocity+dash_velocity, playerbody.velocity.y);
     }
     void Attack()
     {
@@ -111,30 +119,18 @@ public class playerscript : MonoBehaviour
             jump_count--;
         }
     }
-    void Dash()
+    IEnumerator Dash(float direction)
     {
-        dash_velocity = 0.0f;
-        move_velocity = 0;
-        if(Input.GetKeyDown(KeyCode.RightControl))
-        {
-            Debug.Log("is dashing");
-            if(!can_dash)
-        {
-            dash_charge += Time.deltaTime;
-        }
-
-        if(dash_charge >= dash_recharge_time)
-        {
-            can_dash = true;
-        }
-        if (can_dash)
-            {
-                dash_velocity = dash_amount;
-                dash_charge = 0.0f;
-                can_dash = false;
-        }
+        isDashing = true;
+        playerbody.velocity = new Vector2(playerbody.velocity.x, 0f);
+        playerbody.AddForce(new Vector2(dashDistance * direction, 0f), ForceMode2D.Impulse);
+        float gravity = playerbody.gravityScale;
+        playerbody.gravityScale = 0;
+        dashCount--;
+        yield return new WaitForSeconds(0.2f);
+        isDashing = false;
+        playerbody.gravityScale = gravity;
     } 
-}
 }
 
 

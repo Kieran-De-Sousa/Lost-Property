@@ -106838,14 +106838,18 @@ MonoBehaviour:
   move_velocity: 0
   jump: 8
   playercollider: {fileID: 1395472842}
+  jump_count: 0
+  dashDistance: 10
+  dashCount: 0
   animator: {fileID: 1395472845}
   lifePoints: 0
   attack_range: 0.5
   attackPos: {fileID: 1440732814}
   EnemiesLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
   attack_damage: 1
+  attack_rate: 3.7
 --- !u!95 &1395472845
 Animator:
   serializedVersion: 3
@@ -106898,14 +106902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 256d6dddfa169eb4494c5ada7261affc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAttacking: 0
-  attack_time: 0
-  attack_start: 0.3
-  attackPos: {fileID: 1440732814}
-  enemies:
-    m_Bits: 512
-  attackrange: 3
-  damage: 2
 --- !u!1 &1440732813
 GameObject:
   m_ObjectHideFlags: 0
