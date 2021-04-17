@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class playerscript : MonoBehaviour
 {
@@ -42,7 +43,7 @@ public class playerscript : MonoBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(move_velocity));
         animator.SetFloat("Jump_speed", Mathf.Abs(playerbody.velocity.y));
-        float h = Input.GetAxis("Horizontal");
+        float h = CrossPlatformInputManager.GetAxis("Horizontal");
         if (h > 0 && !facingRight)
             Flip();
         else if (h < 0 && facingRight)
@@ -50,11 +51,11 @@ public class playerscript : MonoBehaviour
         move_velocity = 0;
         if(!isDashing)
         {
-            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            if (h < 0)
             {
                 move_velocity -= speed;
             }
-            if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            if (h > 0)
             {
                 move_velocity += speed;
             }
@@ -85,7 +86,7 @@ public class playerscript : MonoBehaviour
     {
         if(Time.time >= nextAttackTime)
         {
-            if (Input.GetKeyDown(KeyCode.LeftControl))
+            if (CrossPlatformInputManager.GetButtonDown("Attack"))
             {
                 animator.SetTrigger("attack");
                 Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, attack_range, EnemiesLayer);
@@ -113,7 +114,7 @@ public class playerscript : MonoBehaviour
     void Jump()
     {
         isGrounded = Physics2D.OverlapCircle(groundcheck.position, 0.2f, groundlayer);
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && jump_count > 0)
+        if (CrossPlatformInputManager.GetButtonDown("Jump") && jump_count > 0)
         {
             playerbody.velocity = new Vector2(move_velocity, jump);
             jump_count--;
