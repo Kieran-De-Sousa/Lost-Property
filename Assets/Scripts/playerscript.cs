@@ -67,11 +67,11 @@ public class playerscript : MonoBehaviour
         Attack();
         Jump();
         if(dashCount > 0){
-        if(Input.GetKeyDown(KeyCode.LeftShift) && facingRight &&!isGrounded)
+        if(CrossPlatformInputManager.GetButtonDown("Dash") && facingRight &&!isGrounded)
         {
             StartCoroutine(Dash(1f));
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift) && !facingRight &&!isGrounded)
+        if(CrossPlatformInputManager.GetButtonDown("Dash") && !facingRight &&!isGrounded)
         {
             StartCoroutine(Dash(-1f));
         }
