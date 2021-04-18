@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimerCountdown : MonoBehaviour
 {
     public GameObject textDisplay;
-    public int secondsLeft = 30;
+    public int secondsLeft = 60;
     public bool takingAway = false;
 
     void Start()
@@ -19,6 +19,11 @@ public class TimerCountdown : MonoBehaviour
         if (takingAway == false && secondsLeft > 0)
         {
             StartCoroutine(TimerTake());
+        }
+
+        else if (takingAway == false && secondsLeft <= 0)
+        {
+
         }
     }
 
