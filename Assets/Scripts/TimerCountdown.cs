@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TimerCountdown : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class TimerCountdown : MonoBehaviour
 
         else if (takingAway == false && secondsLeft <= 0)
         {
-
+            GameOver();
         }
     }
 
@@ -37,5 +38,14 @@ public class TimerCountdown : MonoBehaviour
         takingAway = false;
     }
 
+    public void GameOver()
+    {
+        StartCoroutine(wait());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(2f);
+    }
 
 }

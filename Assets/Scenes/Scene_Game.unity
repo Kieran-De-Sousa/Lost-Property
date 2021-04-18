@@ -107087,7 +107087,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1172713640}
-  secondsLeft: 30
+  secondsLeft: 60
   takingAway: 0
 --- !u!1 &1097526771
 GameObject:
