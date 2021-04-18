@@ -11,6 +11,7 @@ public class Death_Plane : MonoBehaviour
 
         if (other == PlayerCollider)
         {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
 }
