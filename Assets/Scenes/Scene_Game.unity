@@ -108352,6 +108352,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0731663, y: 1.0731663, z: 1.0731663}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 162.54376}
+  m_LocalScale: {x: 0.012877997, y: 0.012877995, z: 0.012877995}
   m_Children: []
   m_Father: {fileID: 1279186727}
   m_Father: {fileID: 1863596499}
