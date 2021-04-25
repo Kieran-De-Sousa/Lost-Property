@@ -107604,7 +107604,7 @@ MonoBehaviour:
   move_velocity: 0
   jump: 8
   playerbody: {fileID: 0}
-  jump_count: 0
+  jump_count: 2
   dashDistance: 10
   dashCount: 0
   animator: {fileID: 1395472845}
