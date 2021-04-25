@@ -13,8 +13,8 @@ public class playerscript : MonoBehaviour
     public float speed;
     public float move_velocity;
     public float jump;
-    private Rigidbody2D playerbody;
-    public CapsuleCollider2D playercollider;
+    public Rigidbody2D playerbody;
+    private BoxCollider2D playercollider;
     public int jump_count;
     //Dash
     public float dashDistance = 15f;
@@ -30,11 +30,13 @@ public class playerscript : MonoBehaviour
     public int attack_damage;
     public float attack_rate = 3.7f;
     float nextAttackTime = 0f;
-
+    public bool sword;
+    public bool slingshot;
+    public GameObject BulletPrefab;
 
     void Start()
     {
-        playercollider = this.gameObject.GetComponent<CapsuleCollider2D>();
+        playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
 
     }
@@ -88,12 +90,19 @@ public class playerscript : MonoBehaviour
         {
             if (CrossPlatformInputManager.GetButtonDown("Attack"))
             {
-                animator.SetTrigger("attack");
-                Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, attack_range, EnemiesLayer);
-                nextAttackTime = Time.time + 1f / attack_rate;
-                foreach (Collider2D enemy in hitEnemies)
+                if(sword)
                 {
-                    enemy.GetComponent<Enemies>().TakeDamage(attack_damage);
+                    animator.SetTrigger("attack");
+                    Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPos.position, attack_range, EnemiesLayer);
+                    nextAttackTime = Time.time + 1f / attack_rate;
+                    foreach (Collider2D enemy in hitEnemies)
+                    {
+                        enemy.GetComponent<Enemies>().TakeDamage(attack_damage);
+                    }
+                }
+                else if (slingshot)
+                {
+                    Shoot();
                 }
             }
         }
@@ -101,9 +110,7 @@ public class playerscript : MonoBehaviour
     void Flip()
     {
         facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        transform.Rotate(0f,180f,0f);
     }
     void onDrawGizmosSelected()
     {
@@ -132,6 +139,10 @@ public class playerscript : MonoBehaviour
         isDashing = false;
         playerbody.gravityScale = gravity;
     } 
+    void Shoot()
+    {
+        Instantiate(BulletPrefab, attackPos.position, attackPos.rotation);
+    }
 }
 
 
