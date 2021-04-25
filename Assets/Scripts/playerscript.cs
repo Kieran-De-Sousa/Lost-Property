@@ -5,6 +5,14 @@ using UnityStandardAssets.CrossPlatformInput;
 
 public class playerscript : MonoBehaviour
 {
+    //Inventory
+    private bool InventoryEnabled = false;
+    public GameObject inventory;
+    private int allSlots;
+    private int enabledSlots;
+    private GameObject[] slot;
+    public GameObject slotHolder;
+    public GameObject screenUI;
     //Movement and Physics
     public LayerMask groundlayer;
     public bool isGrounded = false;
@@ -36,9 +44,15 @@ public class playerscript : MonoBehaviour
 
     void Start()
     {
+        screenUI.SetActive(true);
         playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
-
+        allSlots = 12;
+        slot = new GameObject[allSlots];
+        for(int i = 0; i < allSlots; i++)
+        {
+            slot[i] = slotHolder.transform.GetChild(i).gameObject;
+        }
     }
 
     void FixedUpdate()
@@ -63,9 +77,21 @@ public class playerscript : MonoBehaviour
             }
             playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
         }
-    }
+    }       
     void Update()
     {
+        if(CrossPlatformInputManager.GetButtonDown("Backpack"))
+        {
+            InventoryEnabled = !InventoryEnabled;
+        }
+        if(InventoryEnabled)
+        {
+            screenUI.SetActive(false);
+            inventory.SetActive(true);
+        } else {
+                inventory.SetActive(false);
+                screenUI.SetActive(true);
+        }
         Attack();
         Jump();
         if(dashCount > 0){
