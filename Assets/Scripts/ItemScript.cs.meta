@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scripts/ItemScript.cs.meta
 guid: cecacf90afe9e654fa54f58849a2bd44
+=======
+guid: 329871994d0845a48b65a7f84345b990
+>>>>>>> main:Assets/InventoryUI.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
