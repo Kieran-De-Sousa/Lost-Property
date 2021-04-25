@@ -47,7 +47,6 @@ public class playerscript : MonoBehaviour
         screenUI.SetActive(true);
         playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
-
         allSlots = 12;
         slot = new GameObject[allSlots];
         for(int i = 0; i < allSlots; i++)
@@ -78,7 +77,6 @@ public class playerscript : MonoBehaviour
             }
             playerbody.velocity = new Vector2(move_velocity, playerbody.velocity.y);
         }
-    }
     }       
     void Update()
     {
