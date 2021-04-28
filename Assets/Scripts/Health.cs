@@ -9,11 +9,16 @@ public class Health : MonoBehaviour
     public int delay;
     public int health;
     public int maxHealth;
+    private Rigidbody2D playerbody;
 
     public Image[] hearts;
     public Sprite fullheart;
     public Sprite noheart;
 
+    void Start()
+    {
+        playerbody = this.gameObject.GetComponent<Rigidbody2D>();
+    }
     private void FixedUpdate()
     {
         if (health > maxHealth)
@@ -49,7 +54,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log("Player Damage Taken!");
+        Debug.Log("Player Damage Taken!"); 
     }
     public void Death()
     {

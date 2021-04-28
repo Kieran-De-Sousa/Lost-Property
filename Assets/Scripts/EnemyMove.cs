@@ -12,9 +12,12 @@ public class EnemyMove : Enemies
     public int _attackDamage;
     public float _attackRadius;
     public Transform attackPos;
-    public int attackrange;
+    public float attackrange;
     public LayerMask player;
     public int damage;
+    public bool facingRight;
+    private float firstDelta;
+    private float secondDelta;
 
     //movement
     public float _followRadius;
@@ -49,7 +52,10 @@ public class EnemyMove : Enemies
             //if player in front of the enemies
             if (playerTransform.position.x < transform.position.x)
             {
-
+                if(facingRight)
+                {
+                    Flip();
+                }
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
@@ -76,18 +82,34 @@ public class EnemyMove : Enemies
                     enemyAnim.SetBool("isAttacking", false);
                     //walk
                     enemyAnim.SetBool("isRunning", true);
-                    enemySR.flipX = true;
                 }
 
             }
             //if player is behind enemies
             else if (playerTransform.position.x > transform.position.x)
             {
+                if(!facingRight)
+                {
+                    Flip();
+                }
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
                     enemyAnim.SetBool("isRunning", false);
                     enemyAnim.SetBool("isAttacking", true);
+                    if (attackTime <= 0)
+                    {
+                        Collider2D[] damageenemies = Physics2D.OverlapCircleAll(attackPos.position, attackrange, player);
+                        for (int i = 0; i < damageenemies.Length; i++)
+                        {
+                            damageenemies[i].GetComponent<Health>().TakeDamage(damage);
+                        }
+                        attackTime = timebtwattack;
+                    }
+                    else
+                    {
+                        attackTime -= Time.deltaTime;
+                    }
                 }
                 else
                 {
@@ -96,10 +118,7 @@ public class EnemyMove : Enemies
                     enemyAnim.SetBool("isAttacking", false);
                     //walk
                     enemyAnim.SetBool("isRunning", true);
-                    enemySR.flipX = false;
                 }
-
-
             }
         }
         else
@@ -108,12 +127,18 @@ public class EnemyMove : Enemies
             enemyAnim.SetBool("isAttacking", false);
         }
 
-
     }
     public void Death()
     {
         this.GetComponent<Animator>().SetBool("isDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+    }
+        void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 theScale = transform.localScale;
+        theScale.x *= -1;
+        transform.localScale = theScale;
     }
 }
 
