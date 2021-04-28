@@ -1163,6 +1163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 8
   delay: 0
+  drop: {fileID: 0}
   timebtwattack: 0.5
   attackTime: 1
   _moveSpeed: 2
@@ -1192,6 +1193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 14
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
 --- !u!1 &381007571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,6 +2514,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 7
   delay: 0
+  drop: {fileID: 0}
 --- !u!114 &550509926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2526,6 +2529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 7
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
   timebtwattack: 1
   attackTime: 0
   _moveSpeed: 4
@@ -3396,6 +3400,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 10
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
 --- !u!114 &691629415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3410,6 +3415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 10
   delay: 0
+  drop: {fileID: 0}
   timebtwattack: 0.45
   attackTime: 0
   _moveSpeed: 4
@@ -110719,6 +110725,7 @@ GameObject:
   - component: {fileID: 1395472844}
   - component: {fileID: 1395472845}
   - component: {fileID: 1395472846}
+  - component: {fileID: 1395472847}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -110921,6 +110928,19 @@ MonoBehaviour:
   - {fileID: 262603054}
   fullheart: {fileID: 21300000, guid: 78d9e7ded3416cc4a938df2454778be7, type: 3}
   noheart: {fileID: 21300000, guid: 6eab9b29335e9cc4c9210506fac13248, type: 3}
+--- !u!114 &1395472847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395472839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c041548a822a7c148ac3064ae3082bd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inv: {fileID: 503492584}
 --- !u!1 &1418424251
 GameObject:
   m_ObjectHideFlags: 0
@@ -111421,6 +111441,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 5
   delay: 0
+  drop: {fileID: 0}
 --- !u!114 &1528818631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111435,6 +111456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 5
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
   timebtwattack: 0.6
   attackTime: 0
   _moveSpeed: 1
@@ -112405,6 +112427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 30
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
 --- !u!114 &1775850918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112419,6 +112442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 30
   delay: 0
+  drop: {fileID: 0}
   timebtwattack: 0.9
   attackTime: 0.7
   _moveSpeed: 3
@@ -113233,6 +113257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 3
   delay: 0
+  drop: {fileID: 0}
 --- !u!114 &1879520483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113247,6 +113272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifePoints: 3
   delay: 0
+  drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
   timebtwattack: 0.5
   attackTime: 0
   _moveSpeed: 5
@@ -114322,6 +114348,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2083583246}
     m_Modifications:
+    - target: {fileID: 2115594802258223187, guid: a18a7c05e01eb664888eca23da6ecf1d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115594802258223187, guid: a18a7c05e01eb664888eca23da6ecf1d,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2115594803100175214, guid: a18a7c05e01eb664888eca23da6ecf1d,
         type: 3}
       propertyPath: m_Pivot.x
@@ -114436,6 +114472,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: InventorySlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115594803427187722, guid: a18a7c05e01eb664888eca23da6ecf1d,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2115594803427187722, guid: a18a7c05e01eb664888eca23da6ecf1d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18a7c05e01eb664888eca23da6ecf1d, type: 3}

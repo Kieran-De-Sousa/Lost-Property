@@ -42,6 +42,8 @@ public class playerscript : MonoBehaviour
     public bool slingshot;
     public GameObject BulletPrefab;
 
+
+
     void Start()
     {
         screenUI.SetActive(true);

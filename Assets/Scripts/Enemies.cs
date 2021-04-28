@@ -11,6 +11,8 @@ public class Enemies : MonoBehaviour
     public int lifePoints;
     float attackRadius;
     public float delay;
+    public GameObject drop;
+    bool can_drop = true;
 
     //movement
     float followRadius;
@@ -101,5 +103,13 @@ public class Enemies : MonoBehaviour
         print("isdead");
         this.GetComponent<Animator>().SetBool("isDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
+
+        if (can_drop)
+        {
+            //Get position of the current bad guy.
+            Vector2 position = this.GetComponent<Rigidbody2D>().position;
+            Instantiate(drop, new Vector3(position.x, position.y, 0), Quaternion.identity);
+            can_drop = false;
+        }
     }
 }
