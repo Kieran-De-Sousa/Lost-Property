@@ -12,7 +12,7 @@ public class TimerCountdown : MonoBehaviour
 
     void Start()
     {
-        textDisplay.GetComponent<UnityEngine.UI.Text>().text = "00:" + secondsLeft;
+        textDisplay.GetComponent<UnityEngine.UI.Text>().text = "Seconds Left: " + secondsLeft;
     }
 
     void Update()
@@ -34,7 +34,7 @@ public class TimerCountdown : MonoBehaviour
         yield return new WaitForSeconds(1);
         secondsLeft -= 1;
         //display new time
-        textDisplay.GetComponent<UnityEngine.UI.Text>().text = "00:" + secondsLeft;
+        textDisplay.GetComponent<UnityEngine.UI.Text>().text = "Seconds Left: " + secondsLeft;
         takingAway = false;
     }
 
