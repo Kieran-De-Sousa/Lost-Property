@@ -52,7 +52,7 @@ public class playerscript : MonoBehaviour
     {
         data_inventory = new Inventory();
         uiInventory.SetInventory(data_inventory);
-        ItemWorld.SpawnItemWorld(new Vector3(123,-51), new Item { itemType = Item.ItemType.Sock, amount = 1});
+        ItemWorld.SpawnItemWorld(new Vector3(103f,-51.4f), new Item { itemType = Item.ItemType.Sock, amount = 1});
     }
 
     void Start()
@@ -184,6 +184,16 @@ public class playerscript : MonoBehaviour
     void Shoot()
     {
         Instantiate(BulletPrefab, attackPos.position, attackPos.rotation);
+    }
+
+    void OnTriggerEnter2D(Collider2D collider)
+    {
+        ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
+        if(itemWorld != null)
+        {
+            data_inventory.AddItem(itemWorld.GetItem());
+            itemWorld.DestroySelf();
+        }
     }
 }
 
