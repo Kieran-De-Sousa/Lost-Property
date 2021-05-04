@@ -11,8 +11,14 @@ public class playerscript : MonoBehaviour
     private int allSlots;
     private int enabledSlots;
     private GameObject[] slot;
-    public GameObject slotHolder;
+    //public GameObject slotHolder;
     public GameObject screenUI;
+
+    //Inventory system.
+    private Inventory data_inventory;
+    [SerializeField] private UI_Inventory uiInventory;
+
+
     //Movement and Physics
     public LayerMask groundlayer;
     public bool isGrounded = false;
@@ -42,19 +48,27 @@ public class playerscript : MonoBehaviour
     public bool slingshot;
     public GameObject BulletPrefab;
 
-
+    void Awake()
+    {
+        data_inventory = new Inventory();
+        uiInventory.SetInventory(data_inventory);
+        ItemWorld.SpawnItemWorld(new Vector3(123,-51), new Item { itemType = Item.ItemType.Sock, amount = 1});
+    }
 
     void Start()
     {
         screenUI.SetActive(true);
         playercollider = this.gameObject.GetComponent<BoxCollider2D>();
         playerbody = this.gameObject.GetComponent<Rigidbody2D>();
+
+        /*
         allSlots = 12;
         slot = new GameObject[allSlots];
         for(int i = 0; i < allSlots; i++)
         {
             slot[i] = slotHolder.transform.GetChild(i).gameObject;
         }
+        */
     }
 
     void FixedUpdate()

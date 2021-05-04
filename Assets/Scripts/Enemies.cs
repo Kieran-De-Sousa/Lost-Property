@@ -107,9 +107,9 @@ public class Enemies : MonoBehaviour
         if (can_drop)
         {
             //Get position of the current bad guy.
-            Vector2 position = this.GetComponent<Rigidbody2D>().position;
-            Instantiate(drop, new Vector3(position.x, position.y, 0), Quaternion.identity);
-            can_drop = false;
+            //Vector2 position = this.GetComponent<Rigidbody2D>().position;
+           // Instantiate(drop, new Vector3(position.x, position.y, 0), Quaternion.identity);
+           // can_drop = false;
         }
     }
 }
