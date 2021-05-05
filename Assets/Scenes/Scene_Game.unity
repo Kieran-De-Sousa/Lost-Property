@@ -956,6 +956,8 @@ MonoBehaviour:
   lifePoints: 8
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 4
   timebtwattack: 0.5
   attackTime: 1
   _moveSpeed: 2
@@ -986,6 +988,8 @@ MonoBehaviour:
   lifePoints: 14
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 4
 --- !u!1 &381007571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,6 +1194,36 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!1 &470823522
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470823523}
+  m_Layer: 0
+  m_Name: LostBox
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &470823523
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470823522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 118.31, y: -48.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &487213702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1757,6 +1791,8 @@ MonoBehaviour:
   lifePoints: 7
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 3
 --- !u!114 &550509926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1772,6 +1808,8 @@ MonoBehaviour:
   lifePoints: 7
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 3
   timebtwattack: 1
   attackTime: 0
   _moveSpeed: 4
@@ -2306,6 +2344,8 @@ MonoBehaviour:
   lifePoints: 10
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 2
 --- !u!114 &691629415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2321,6 +2361,8 @@ MonoBehaviour:
   lifePoints: 10
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 2
   timebtwattack: 0.45
   attackTime: 0
   _moveSpeed: 4
@@ -110068,6 +110110,8 @@ MonoBehaviour:
   lifePoints: 5
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 1
 --- !u!114 &1528818631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110083,6 +110127,8 @@ MonoBehaviour:
   lifePoints: 5
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 1
   timebtwattack: 0.6
   attackTime: 0
   _moveSpeed: 1
@@ -110771,6 +110817,8 @@ MonoBehaviour:
   lifePoints: 30
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 0
 --- !u!114 &1775850918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110786,6 +110834,8 @@ MonoBehaviour:
   lifePoints: 30
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 0
   timebtwattack: 0.9
   attackTime: 0.7
   _moveSpeed: 3
@@ -111269,6 +111319,8 @@ MonoBehaviour:
   lifePoints: 3
   delay: 0
   drop: {fileID: 0}
+  canSpawn: 1
+  dropType: 0
 --- !u!114 &1879520483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111284,6 +111336,8 @@ MonoBehaviour:
   lifePoints: 3
   delay: 0
   drop: {fileID: 5648538239157353837, guid: 12e3b076f54a1b646a94a7f5e86527ed, type: 3}
+  canSpawn: 1
+  dropType: 0
   timebtwattack: 0.5
   attackTime: 0
   _moveSpeed: 5

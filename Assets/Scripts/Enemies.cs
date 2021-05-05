@@ -12,7 +12,8 @@ public class Enemies : MonoBehaviour
     float attackRadius;
     public float delay;
     public GameObject drop;
-    bool can_drop = true;
+    public bool canSpawn = true;
+    public int dropType;
 
     //movement
     float followRadius;
@@ -104,12 +105,29 @@ public class Enemies : MonoBehaviour
         this.GetComponent<Animator>().SetBool("isDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
 
-        if (can_drop)
+        if (canSpawn)
         {
-            //Get position of the current bad guy.
-            //Vector2 position = this.GetComponent<Rigidbody2D>().position;
-           // Instantiate(drop, new Vector3(position.x, position.y, 0), Quaternion.identity);
-           // can_drop = false;
+            Debug.Log("Dies");
+            switch (dropType)
+            {
+
+                case 0:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Bottel, amount = 1 });
+                    break;
+                case 1:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Map, amount = 1 });
+                    break;
+                case 2:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Clarinet, amount = 1 });
+                    break;
+                case 3:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Phone, amount = 1 });
+                    break;
+                case 4:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Sock, amount = 1 });
+                    break;
+            }
+            canSpawn = false;
         }
     }
 }

@@ -18,7 +18,9 @@ public class EnemyMove : Enemies
     public bool facingRight;
     private float firstDelta;
     private float secondDelta;
-    public string dropType;
+    //public int dropType;
+
+    //private bool canSpawn = true;
 
     //movement
     public float _followRadius;
@@ -46,6 +48,9 @@ public class EnemyMove : Enemies
     {
         if (lifePoints <= 0)
         {
+
+            
+            
             Death();
         }
         if (checkFollowRadius(playerTransform.position.x, transform.position.x))
@@ -131,6 +136,31 @@ public class EnemyMove : Enemies
     }
     public void Death()
     {
+
+        if (canSpawn)
+        {
+            switch (dropType)
+            {
+
+                case 0:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Bottel, amount = 1 });
+                    break;
+                case 1:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Map, amount = 1 });
+                    break;
+                case 2:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Clarinet, amount = 1 });
+                    break;
+                case 3:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Phone, amount = 1 });
+                    break;
+                case 4:
+                    ItemWorld.SpawnItemWorld(transform.position, new Item { itemType = Item.ItemType.Sock, amount = 1 });
+                    break;
+            }
+            canSpawn = false;
+        }
+
         this.GetComponent<Animator>().SetBool("isDead", true);
         Destroy(gameObject, this.GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).length + delay);
     }

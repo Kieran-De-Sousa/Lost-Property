@@ -12,11 +12,6 @@ public class Inventory
     public Inventory()
     {
         itemList = new List<Item>();
-
-        AddItem(new Item { itemType = Item.ItemType.Bottel, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Phone, amount = 1 });
-        AddItem(new Item { itemType = Item.ItemType.Sock, amount = 1 });
-        Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item)
