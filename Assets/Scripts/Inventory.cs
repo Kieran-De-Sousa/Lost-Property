@@ -20,6 +20,11 @@ public class Inventory
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    public void RemoveItem(Item item)
+    {
+        itemList.Remove(item);
+    }
+
     public List<Item> GetItemList()
     {
         return itemList;

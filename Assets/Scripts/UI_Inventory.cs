@@ -33,6 +33,12 @@ public class UI_Inventory : MonoBehaviour
         RefreshInventoryItems();
     }
 
+    void Deposit(int buttonNo)
+    {
+        //Output this to console when the Button3 is clicked
+        Debug.Log("Button clicked = " + buttonNo);
+    }
+
     private void RefreshInventoryItems()
     {
         foreach(Transform child in itemSlotC.transform)
@@ -48,10 +54,17 @@ public class UI_Inventory : MonoBehaviour
         {
             RectTransform itemSlotRectTransform = Instantiate(itemSlotT, itemSlotC.transform).GetComponent<RectTransform>();
             //Debug.Log(itemSlotContainer);
+
             
+
             itemSlotRectTransform.gameObject.SetActive(true);
+            
+
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
             Image image = itemSlotRectTransform.Find("itemImage").GetComponent<Image>();
+
+            itemSlotRectTransform.Find("Button").GetComponent<Button>().onClick.AddListener(() => Deposit(20));
+
             image.sprite = item.GetSprite();
             x++;
             if(x > 4)
