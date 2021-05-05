@@ -10,6 +10,9 @@ public class UI_Inventory : MonoBehaviour
     private Transform itemSlotTemplate;
     public GameObject itemSlotC;
     public GameObject itemSlotT;
+    public GameObject lostBox;
+    public GameObject player;
+    public GameObject timer;
 
 
     private void Awake()
@@ -17,8 +20,6 @@ public class UI_Inventory : MonoBehaviour
         itemSlotContainer = itemSlotC.transform;
         itemSlotTemplate = itemSlotT.transform;
     }
-
-    
 
     public void SetInventory(Inventory inventory)
     {
@@ -33,10 +34,16 @@ public class UI_Inventory : MonoBehaviour
         RefreshInventoryItems();
     }
 
-    void Deposit(int buttonNo)
+    void Deposit(Item item)
     {
         //Output this to console when the Button3 is clicked
-        Debug.Log("Button clicked = " + buttonNo);
+
+        if ((lostBox.transform.position - player.transform.position).magnitude < 2)
+        {
+            inventory.RemoveItem(item);
+            RefreshInventoryItems();
+            timer.GetComponent<TimerCountdown>().secondsLeft += 20;
+        }
     }
 
     private void RefreshInventoryItems()
@@ -63,7 +70,7 @@ public class UI_Inventory : MonoBehaviour
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * itemSlotCellSize);
             Image image = itemSlotRectTransform.Find("itemImage").GetComponent<Image>();
 
-            itemSlotRectTransform.Find("Button").GetComponent<Button>().onClick.AddListener(() => Deposit(20));
+            itemSlotRectTransform.Find("Button").GetComponent<Button>().onClick.AddListener(() => Deposit(item));
 
             image.sprite = item.GetSprite();
             x++;
