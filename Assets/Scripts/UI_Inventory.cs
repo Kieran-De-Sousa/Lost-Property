@@ -18,6 +18,8 @@ public class UI_Inventory : MonoBehaviour
         itemSlotTemplate = itemSlotT.transform;
     }
 
+    
+
     public void SetInventory(Inventory inventory)
     {
         this.inventory = inventory;
@@ -27,7 +29,8 @@ public class UI_Inventory : MonoBehaviour
 
     private void Inventory_OnItemListChanged(object sender, System.EventArgs e)
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        RefreshInventoryItems();
     }
 
     private void RefreshInventoryItems()

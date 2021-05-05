@@ -18,6 +18,7 @@ public class EnemyMove : Enemies
     public bool facingRight;
     private float firstDelta;
     private float secondDelta;
+    public string dropType;
 
     //movement
     public float _followRadius;
