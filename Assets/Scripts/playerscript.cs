@@ -52,7 +52,6 @@ public class playerscript : MonoBehaviour
     {
         data_inventory = new Inventory();
         uiInventory.SetInventory(data_inventory);
-        ItemWorld.SpawnItemWorld(new Vector3(107f,-51.4f), new Item { itemType = Item.ItemType.Sock, amount = 1});
     }
 
     void Start()
