@@ -1,13 +1,13 @@
 # Lost Property
 
 
-# Credits (So far):
-Thomas Pasley - Lead gameplay programmer
+# Credits:
+Thomas Pasley - Lead Gameplay Programmer
 
-Asli Baltaci - All art assets, Boss room design
+Asli Baltaci - All Art Assets, Boss Room Level Design
 
-Kieran De Sousa - Level design, UI design and scripting, health programming
+Kieran De Sousa - Level & UI design, UI Scripting, Health Programming
 
-Jake Warren Davis - 
+Jake Warren Davis - Inventory System
 
-Tane Cotterell-East - 
+Tane Cotterell-East - Sound Assets Sourcing
