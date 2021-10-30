@@ -6,11 +6,11 @@ Lost Property is a 32-bit pixel platformer created in Unity Engine version 2019.
 - **Thomas Pasley**
   - Lead Gameplay Programmer
 
-- **Asli Baltaci**
+- **[Asli Baltaci](https://aslibaltaci.github.io)**
   - Art Assets
   - Boss Room Level Design
 
-- **Kieran De Sousa**
+- **[Kieran De Sousa](https://kieran-de-sousa.github.io)**
   - UI
   - Player Health Scripting
   - Level Design
